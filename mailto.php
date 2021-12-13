@@ -9,7 +9,7 @@
             $headers = 'From: '.$email . "\r\n";
 
 
-            $body = "name : ".$name. "\r\n" .
+            $body = "Name : ".$name. "\r\n" .
                     "Phone : ".$phone. "\r\n" .
                     "Message : " . $body;
             if(mail($to, $subject, $body , $headers)){
