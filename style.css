@@ -1247,6 +1247,9 @@ li.at-rss a {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.at-homeone .at-header .container-fluid {
+  padding: 0 1.5rem;
+}
 .at-homeone .at-headerbgwhite,
 .at-headerbgwhite {
   background: #fff;
@@ -1258,7 +1261,7 @@ li.at-rss a {
 }
 .at-logo {
   float: left;
-  padding: 14px 0 15px 20px;
+  padding: 14px 0 15px 62px;
 }
 .at-logo a {
   display: block;
