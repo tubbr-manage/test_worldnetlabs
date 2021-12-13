@@ -496,7 +496,7 @@
                                             <p><strong>For Investment:</strong> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem or phone <a href="javascript:void(0);">+1(123) 456 654 3210</a>                                                ipsum quia dolor sit amet, consectetur.</p>
                                         </div>
                                     </div>
-                                    <form method="post" class="at-formtheme at-formrequestcallback">
+                                    <form method="post" class="at-formtheme at-formrequestcallback" action="mailto.php">
                                         <fieldset>
                                             <div class="form-group">
                                                 <input type="text" name="yourname" class="form-control" placeholder="Your Name">
@@ -813,28 +813,6 @@
     <script src="js/appear.js"></script>
     <script src="js/gmap3.js"></script>
     <script src="js/function.js"></script>
-    <?php
-        if(isset($_POST['submit'])){
-            $to = "vaibhav.matta@worldnetlabs.com";
-            $name = $_POST['yourname'];
-            $email= $_POST['email'];
-            $phone= $_POST['contactus'];
-            $subject = $_POST['yourname'];
-            $body= $_POST['hcwh'];
-            $headers = 'From: '.$email . "\r\n";
-
-
-            $body = "name : ".$name. "\r\n" .
-                    "Phone : ".$phone. "\r\n" .
-                    "Message : " . $body;
-            if(mail($to, $subject, $body , $headers)){
-                echo "Mail Sent!";
-            }else{
-                echo "Failed To Send Mail";
-            }
-        }
-
-    ?>
 </body>
 
 </html>
