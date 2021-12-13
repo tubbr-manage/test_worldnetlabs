@@ -30,7 +30,7 @@ a:active,
 .at-aboutsectionvthree .at-aboutus .at-sectiontitleborder h2 span,
 .at-homeslidervfour .at-titleborder h2 em,
 .at-homeslidervfive .at-titleborder h2 em {
-  color: rgb(36, 85, 164);
+  color: rgb(32, 113, 188);
 }
 /*=============================================
 			Theme Background Color
@@ -72,10 +72,10 @@ a:active,
 .at-aboutplusconter .at-aboutus .at-imgholder:before,
 .loader,
 .lds-roller {
-  background: rgb(36, 85, 164);
+  background: rgb(32, 113, 188);
 }
 .at-liststyletick li:before {
-  background-color: rgb(36, 85, 164);
+  background-color: rgb(32, 113, 188);
 }
 .at-postsvtwo .at-post:hover .at-postcontent {
   background: rgba(44, 103, 244, 0.8);
@@ -91,7 +91,7 @@ input:focus,
 .at-pagination ul li.at-active a,
 .at-postcontent .at-description blockquote,
 .at-formnewsletter fieldset .at-btn {
-  border-color: rgb(36, 85, 164);
+  border-color: rgb(32, 113, 188);
 }
 /*=============================================
 			Theme Other Colors
