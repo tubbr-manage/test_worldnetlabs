@@ -1265,6 +1265,9 @@ li.at-rss a {
 }
 .at-logo a img {
   display: block;
+  height: 60px;
+  width: 301px;
+  object-fit: contain;
 }
 .at-homeone .at-navigationarea {
   background: #fff;
@@ -2281,7 +2284,7 @@ li.at-rss a {
 .at-fcolumn {
   float: left;
   color: #ccc;
-  width: 33.33%;
+  width: 50%;
   font-size: 14px;
   font-weight: 300;
   padding: 30px 0;
