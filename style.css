@@ -1266,7 +1266,7 @@ li.at-rss a {
 .at-logo a img {
   display: block;
   height: 60px;
-  width: 301px;
+  width: auto;
   object-fit: contain;
 }
 .at-homeone .at-navigationarea {
