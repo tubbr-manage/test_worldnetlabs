@@ -195,7 +195,12 @@ textarea:focus,
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1rem;
+}
+
+.form-row .halfItem {
+  max-width: 49%;
 }
 .form-row .firstItem {
   /* width: 50%; */
@@ -1052,6 +1057,7 @@ li.at-rss a {
   overflow: hidden;
 }
 .at-footer {
+  margin-top: 5rem;
 }
 .at-titleborder {
   width: 100%;
@@ -1073,8 +1079,9 @@ li.at-rss a {
 .at-titleborder h2 {
   margin: 0;
   color: #fff;
+  line-height: 3;
   text-transform: capitalize;
-  font: 300 42px/36px "Rubik", Arial, Helvetica, sans-serif;
+  font: 300 42px/1.2 "Rubik", Arial, Helvetica, sans-serif;
 }
 .at-titleborder h2 span {
   display: block;
@@ -3800,10 +3807,13 @@ li.at-rss a {
 }
 .at-serviceimg img {
   z-index: 1;
-  width: 100%;
+  min-width: 100%;
   height: auto;
   display: block;
   position: relative;
+  width: 400px;
+  height: 330px;
+  object-fit: cover;
 }
 .at-serviceimg figcaption {
   top: 0;
