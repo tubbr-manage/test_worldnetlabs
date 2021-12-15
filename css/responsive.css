@@ -371,6 +371,18 @@
     width: 100% !important;
     max-width: 100% !important;
   }
+  .at-header .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    margin: auto;
+  }
+  .at-header .row .at-navigationarea {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 @media (max-width: 800px) {
   .at-homeslider .item figcaption {
@@ -506,7 +518,7 @@
     padding: 21px 0 21px 20px;
   }
   .at-infoemail {
-    top: 18%;
+    top: 32%;
     left: 15px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
