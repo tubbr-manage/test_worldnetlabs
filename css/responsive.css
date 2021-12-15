@@ -284,6 +284,13 @@
 @media (max-width: 991px) {
   .at-aboutus .at-sidebar {
     padding: 0 0 40px;
+    display: none;
+  }
+  .at-aboutus .at-aboutuscontent {
+    width: 100%;
+  }
+  .at-pagespace {
+    padding-bottom: 2rem;
   }
   .at-posts .at-sidebar {
     padding: 60px 0 0;
