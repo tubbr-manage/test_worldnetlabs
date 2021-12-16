@@ -28,12 +28,17 @@
   padding: 0px;
 }
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth !important; */
 }
 body {
   color: #333;
   background: #fff;
   font: 300 16px/28px "Rubik", Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  overflow: hidden;
+  height: 100%;
 }
 body h1,
 body h2,
@@ -213,7 +218,7 @@ textarea:focus,
 .form-group {
   width: 100%;
   float: left;
-  margin: 0 0 13px;
+  margin: 0 0;
 }
 label {
   color: #666;
@@ -403,6 +408,9 @@ address {
 .at-haslayout {
   width: 100%;
   float: left;
+}
+#industries {
+  padding: 100px 0;
 }
 .at-sectionspace {
   padding: 100px 0;
@@ -1052,6 +1060,9 @@ li.at-rss a {
 }
 .at-wrapper {
   overflow: hidden;
+  overflow: auto;
+  height: 100%;
+  scroll-behavior: auto;
 }
 .at-main {
   overflow: hidden;
@@ -1257,6 +1268,7 @@ li.at-rss a {
 }
 .at-homeone .at-header .container-fluid {
   padding: 0 1.5rem;
+  background-color: white;
 }
 .at-homeone .at-headerbgwhite,
 .at-headerbgwhite {
