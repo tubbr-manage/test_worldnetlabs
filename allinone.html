@@ -24,6 +24,27 @@
     <link rel="stylesheet" href="css/color.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="./wnl_animation.css" />
+    <script defer async>
+      const addInterSectionObserver = (element) => {
+        // debugger;
+        var observer = new IntersectionObserver(
+          function (entries) {
+            if (entries[0].isIntersecting === true)
+              element.classList.add("cardEntered");
+          },
+          { threshold: [0.2] }
+        );
+        observer.observe(element);
+      };
+      window.addEventListener("load", (event) => {
+        const sections = document.getElementsByTagName("section");
+        console.log(sections);
+        [...sections].forEach((card) => {
+          addInterSectionObserver(card);
+        });
+      });
+    </script>
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -1393,7 +1414,7 @@
                 <div class="at-fcolumn">
                   <div class="at-widget at-widgettext">
                     <strong class="at-logo"
-                      ><a href="javascript:void(0);"
+                      ><a target="_blank" href="javascript:void(0);"
                         ><img
                           src="images/logo.png"
                           alt="image description" /></a
@@ -1406,26 +1427,42 @@
                     </div>
                     <ul class="at-socialicons">
                       <li class="at-facebook">
-                        <a href="javascript:void(0);"
+                        <a
+                          target="_blank"
+                          href="https://www.facebook.com/WorldNetLabs"
                           ><i class="fa fa-facebook"></i
                         ></a>
                       </li>
-                      <li class="at-twitter">
-                        <a href="javascript:void(0);"
+                      <li class="at-twit<ter">
+                        <a target="_blank" href="javascript:void(0);"
                           ><i class="fa fa-twitter"></i
                         ></a>
                       </li>
                       <li class="at-instagram">
-                        <a href="javascript:void(0);"
+                        <a
+                          target="_blank"
+                          href="https://www.instagram.com/worldnetlabs"
                           ><i class="fa fa-instagram"></i
                         ></a>
                       </li>
                       <li class="at-linkedin">
-                        <a href="javascript:void(0);"
+                        <a
+                          target="_blank"
+                          href="https://www.linkedin.com/company/world-net-labs"
                           ><i class="fa fa-linkedin-square"></i
                         ></a>
                       </li>
+                      <li class="at-linkedin">
+                        <a target="_blank" href="mailto: info@worldnetlabs.com"
+                          ><i class="fa fa-envelope"></i
+                        ></a>
+                      </li>
                     </ul>
+                    <div class="at-description">
+                      <p class="copyright">
+                        Copyright © 2021 || World Net Labs INC
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div class="at-fcolumn">
@@ -1453,7 +1490,7 @@
                           <a href="./allinone.html">About Us</a>
                         </li>
                         <li class="">
-                          <a href="./privacyPolicy.html">Terms of Use</a>
+                          <a href="./privacyPolicy.html">Privacy Policy</a>
                         </li>
                       </ul>
                     </div>
