@@ -930,7 +930,7 @@ li.at-rss a {
 .at-sectionhead {
   width: 100%;
   float: left;
-  padding: 0 0 40px;
+  padding: 0 0;
   position: relative;
 }
 .at-fullheight {
@@ -1190,7 +1190,7 @@ li.at-rss a {
   width: 100%;
   float: left;
   margin: 80px 0 0;
-  background: url("images/parallaxbg/parallaxbg-02.jpg") no-repeat 50% 50%;
+  background: url("images/parallaxbg/parallaxbg-03.jpg") no-repeat 50% 50%;
 }
 .at-innerbanner.at-innerbannervtwo {
   color: #767676;
@@ -1710,7 +1710,8 @@ li.at-rss a {
   margin: 0 30px 0 0;
 }
 .at-feature {
-  width: 100%;
+  width: 400px;
+  height: 260px;
   float: left;
   margin: 10px 0;
   padding: 40px 20px 60px;
@@ -2358,7 +2359,7 @@ li.at-rss a {
   float: left;
 }
 .at-widgetcontent ul {
-  width: 100%;
+  width: 50%;
   float: left;
   font-size: 14px;
   font-weight: 300;
@@ -2376,7 +2377,7 @@ li.at-rss a {
   color: #ccc;
 }
 .at-widgetusefullinks .at-widgetcontent ul li {
-  width: 40%;
+  /* width: 40%; */
 }
 .at-widgetusefullinks .at-widgetcontent ul li:nth-child(odd) {
   float: left;
@@ -2489,6 +2490,21 @@ li.at-rss a {
   float: left;
   width: 66.66%;
   padding: 0 15px;
+}
+#at-ourexpertteam {
+  margin-top: 4rem;
+}
+#at-ourexpertteam .at-description {
+  margin: 3rem auto 5rem;
+}
+#at-ourexpertteam .at-membercontent .at-description {
+  margin: 0 auto;
+}
+.at-aboutuscontent section {
+  margin: 0 auto 3rem auto;
+}
+.at-aboutuscontent section:first-of-type {
+  margin: 0 auto 4rem auto;
 }
 .at-aboutusslider {
   width: 100%;
@@ -2623,7 +2639,7 @@ li.at-rss a {
   float: left;
 }
 .at-whatwedo .at-sectionhead {
-  padding: 0 0 25px;
+  padding: 0 0;
 }
 .at-whatwedo .at-features {
   margin: 0;
@@ -2664,7 +2680,7 @@ li.at-rss a {
   width: 100%;
   float: left;
   margin: 0 0 50px;
-  padding: 0 0 50px;
+  padding: 0 0;
   list-style-type: none;
   border-bottom: 1px solid #dbdbdb;
 }
@@ -2673,6 +2689,9 @@ li.at-rss a {
 }
 .at-aboutus .at-member {
   margin: 0;
+}
+.at-aboutus .at-member:last-of-type {
+  padding-bottom: 4rem;
 }
 .at-member {
   width: 100%;
@@ -2693,8 +2712,9 @@ li.at-rss a {
   display: block;
 }
 .at-member figure a img {
-  width: 100%;
-  height: auto;
+  width: 243px;
+  height: 243px;
+  object-fit: contain;
   display: block;
 }
 .at-membercontent {
