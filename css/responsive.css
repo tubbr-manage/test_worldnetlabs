@@ -389,6 +389,7 @@
   #expertise {
     width: calc(100% - 30px);
     margin: auto;
+    padding-bottom: 0;
   }
   .form-row-mobile-col {
     flex-direction: column;
