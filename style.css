@@ -2727,7 +2727,7 @@ li.at-rss a {
 .at-member figure a img {
   width: 243px;
   height: 243px;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
 }
 .at-membercontent {
