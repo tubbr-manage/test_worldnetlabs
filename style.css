@@ -23,6 +23,8 @@
 			Theme Reset Style					
 ============================================= */
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900%7CSaira:400,600");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -6266,4 +6268,7 @@ li.at-rss a {
   100% {
     transform: rotate(360deg);
   }
+}
+section {
+  opacity: 0;
 }

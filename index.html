@@ -28,7 +28,28 @@
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./wnl_animation.css" />
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script defer async>
+      const addInterSectionObserver = (element) => {
+        // debugger;
+        var observer = new IntersectionObserver(
+          function (entries) {
+            if (entries[0].isIntersecting === true)
+              element.classList.add("cardEntered");
+          },
+          { threshold: [0.2] }
+        );
+        observer.observe(element);
+      };
+      window.addEventListener("load", (event) => {
+        const sections = document.getElementsByTagName("section");
+        console.log(sections);
+        [...sections].forEach((card) => {
+          addInterSectionObserver(card);
+        });
+      });
+    </script>
   </head>
   <body class="at-home at-homeone">
     <!--[if lt IE 8]>
@@ -2140,17 +2161,22 @@
                     </div>
                     <ul class="at-socialicons">
                       <li class="at-facebook">
-                        <a target="_blank" href="javascript:void(0);"
+                        <a
+                          target="_blank"
+                          href="https://www.facebook.com/WorldNetLabs"
                           ><i class="fa fa-facebook"></i
                         ></a>
                       </li>
-                      <li class="at-twitter">
+                      <li class="at-twit<ter">
                         <a target="_blank" href="javascript:void(0);"
                           ><i class="fa fa-twitter"></i
                         ></a>
                       </li>
+                      >
                       <li class="at-instagram">
-                        <a target="_blank" href="javascript:void(0);"
+                        <a
+                          target="_blank"
+                          href="https://www.instagram.com/worldnetlabs"
                           ><i class="fa fa-instagram"></i
                         ></a>
                       </li>
