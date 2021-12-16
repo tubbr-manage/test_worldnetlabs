@@ -193,7 +193,26 @@
     padding: 45px;
   }
   .at-sectiontitleborder h2 {
-    font-size: 34px;
+    font-size: 24px;
+  }
+  .at-title h3 {
+    font-size: 18px;
+  }
+  .at-formnewsletter fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 130px;
+    padding: 0;
+  }
+  .at-formnewsletter fieldset input {
+    width: 100%;
+    margin-bottom: 8rem;
+  }
+  .at-formnewsletter fieldset .at-btn {
+    width: 100%;
+    margin-top: 64px;
   }
   .at-counterarea .at-titleandbtn {
     padding: 0 0 20px;
@@ -683,7 +702,7 @@
   .at-logo {
     float: none;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 0 0;
     padding: 15px 0;
   }
   .at-navigationarea {

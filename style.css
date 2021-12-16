@@ -2329,6 +2329,16 @@ li.at-rss a {
 }
 .at-fcolumn .at-description p {
   font-weight: 300;
+  margin-bottom: 1rem;
+}
+.at-fcolumn .at-description .copyright {
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 0.6;
+}
+.at-fcolumn .at-description a {
+  text-decoration: none;
+  color: white;
 }
 .at-fcolumn .at-socialicons {
   width: 100%;
