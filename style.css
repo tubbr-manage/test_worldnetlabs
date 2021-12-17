@@ -2384,7 +2384,7 @@ li.at-rss a {
   float: left;
 }
 .at-widgetcontent ul {
-  width: 50%;
+  width: 100%;
   float: left;
   font-size: 14px;
   font-weight: 300;
