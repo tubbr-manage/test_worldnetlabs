@@ -1728,6 +1728,7 @@ li.at-rss a {
   width: 400px;
   height: 260px;
   float: left;
+  max-width: 100%;
   margin: 10px 0;
   padding: 40px 20px 60px;
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
@@ -2384,7 +2385,7 @@ li.at-rss a {
   float: left;
 }
 .at-widgetcontent ul {
-  width: 100%;
+  width: 50%;
   float: left;
   font-size: 14px;
   font-weight: 300;
