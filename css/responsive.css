@@ -413,6 +413,10 @@
     align-items: center;
     justify-content: flex-end;
   }
+  .WNL_expertiseGrid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
 }
 @media (max-width: 800px) {
   .at-homeslider .item figcaption {

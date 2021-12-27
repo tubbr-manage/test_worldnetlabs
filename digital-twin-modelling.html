@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>World Net Labs - About Us</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/transitions.css" />
+    <link rel="stylesheet" href="css/prettyPhoto.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/pogoslider.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/color.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="./wnl_animation.css" />
+    <script defer async>
+      const addInterSectionObserver = (element) => {
+        // debugger;
+        var observer = new IntersectionObserver(
+          function (entries) {
+            if (entries[0].isIntersecting === true)
+              element.classList.add("cardEntered");
+          },
+          { threshold: [0.1] }
+        );
+        observer.observe(element);
+      };
+      window.addEventListener("load", (event) => {
+        const sections = document.getElementsByTagName("section");
+        console.log(sections);
+        [...sections].forEach((card) => {
+          addInterSectionObserver(card);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <!--************************************
+			Loader Start
+	*************************************-->
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!--************************************
+			Loader End
+	*************************************-->
+    <!--************************************
+			Wrapper Start
+	*************************************-->
+    <div id="at-wrapper" class="at-wrapper">
+      <!--************************************
+				Header Start
+		*************************************-->
+      <header id="at-header" class="at-header">
+        <div class="container-fluid">
+          <div class="row">
+            <strong class="at-logo"
+              ><a href="index.html"
+                ><img
+                  loading="lazy"
+                  src="images/logo.png"
+                  alt="company logo here" /></a
+            ></strong>
+            <div class="at-navigationarea">
+              <nav id="at-nav" class="at-nav">
+                <div class="navbar-header">
+                  <button
+                    type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#at-navigation"
+                    aria-expanded="false"
+                  >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <div
+                  id="at-navigation"
+                  class="collapse navbar-collapse at-navigation"
+                >
+                  <ul>
+                    <li class="">
+                      <a href="./index.html">Home</a>
+                    </li>
+                    <li class="">
+                      <a href="./index.html#expertise">Expertise</a>
+                    </li>
+                    <li class="">
+                      <a href="./index.html#industries">Industries</a>
+                    </li>
+                    <li class="menu-item-has-children current-menu-item">
+                      <a href="./allinone.html">About Us</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="#at-companyoverview">Company Overview</a>
+                        </li>
+                        <li>
+                          <a href="#at-companyhistory">Our Unique Process</a>
+                        </li>
+                        <!-- <li>
+                          <a href="#at-ourexpertteam">Our Team</a>
+                        </li> -->
+                      </ul>
+                    </li>
+                    <li class="">
+                      <a href="#contact_us">Contact us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="at-contactsocial">
+                <!-- <span class="at-contactnumber">
+                  <i class="icon-telephone114"></i>
+                  <em>+1 900 234 567</em>
+                </span> -->
+                <!-- <ul class="at-socialicons">
+                  <li class="at-facebook">
+                    <a href="javascript:void(0);"
+                      ><i class="fa fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li class="at-twitter">
+                    <a href="javascript:void(0);"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="at-instagram">
+                    <a href="javascript:void(0);"
+                      ><i class="fa fa-instagram"></i
+                    ></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--************************************
+				Header End
+		*************************************-->
+      <!--************************************
+				Home Slider Start
+		*************************************-->
+      <div class="at-innerbanner">
+        <div class="at-innerbannerbox">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="at-innerbannercontent">
+                  <div class="at-pagetitle">
+                    <h1>Digital Twin Modeling at WNL</h1>
+                  </div>
+                  <ol class="at-breadcrumb">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#expertise">Expertise</a></li>
+                    <li class="at-active">
+                      <span>Digital Twin Modeling</span>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--************************************
+				Home Slider End
+		*************************************-->
+      <!--************************************
+				Main Start
+		*************************************-->
+      <main id="at-main" class="at-main at-haslayout at-pagespace">
+        <div class="container">
+          <div class="row">
+            <div class="at-widgettitleborder">
+              <h1>
+                Bridging the digital and physical worlds with digital twin
+                technology
+              </h1>
+            </div>
+            <div id="at-aboutusslider" class="at-aboutusslider">
+              <figure class="item">
+                <img src="images/services/img-01.jpg" alt="image description" />
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="at-content">
+              <div class="at-aboutus">
+                <div class="at-aboutuscontent at-aboutuscontentSerices">
+                  <section
+                    id="at-companyoverview"
+                    class="at-companyoverview at-aboutsection"
+                  >
+                    <div class="at-description">
+                      <p>
+                        A digital twin is a digital representation of a physical
+                        object, process, or service. A digital twin can be a
+                        digital replica of an object in the physical world, such
+                        as a jet engine or organ in the human body or wind
+                        farms, or even larger items such as buildings or even
+                        whole cities.
+                      </p>
+                      <p>
+                        Creating digital twin requires applied mathematics and
+                        data science expertise. WNL engineers combine the
+                        physics and operational data of target object or system
+                        to develop a mathematical model that simulates the
+                        original. They build digital twins by making use of
+                        real-world data to create a computer simulation that
+                        models the product or process and ensures that the
+                        virtual model can connect with sensors that gather data
+                        from the real world. Digital twin is a real-time
+                        simulation of the real-life version, enabling insights
+                        into performance and potential problems. These twins can
+                        be integrated with Internet of Things (IoT), artificial
+                        intelligence (AI), and software analytics to solve
+                        challenging problems.
+                      </p>
+                      <p>
+                        Digital twin complexity varies based on the amount of
+                        data, determining how precisely the model simulates the
+                        real world physical version. The twin can be used as a
+                        prototype to offer feedback on the product as it is
+                        developed or model what could occur with a physical
+                        version when built.
+                      </p>
+                      <p>There are three major types of Digital twins:</p>
+                      <ul>
+                        <li>
+                          <p>
+                            Digital Twin Prototype (DTP) – Created before a
+                            physical product is created
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            Digital Twin Instance (DTI) – Created after a
+                            product is ready to test usage scenarios
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            Digital Twin Aggregate (DTA) – Collects DTI data for
+                            evaluating product performance & operation
+                          </p>
+                        </li>
+                      </ul>
+                      <p>
+                        Digital twins are being used in a wide variety of
+                        industries for a range of applications and purposes. In
+                        <span>Manufacturing</span> to create efficient design
+                        models and improving maintenance and upgrades that
+                        reduce production times significantly; in
+                        <span>Automotive</span> virtual models of connected
+                        vehicle, capture behavioral and operational data
+                        resulting in a personalized experience for car owners;
+                        that can be customized to their specific needs; in
+                        <span>Retail</span> virtual models of stores augment the
+                        customer experience; in <span>Medical</span> organ
+                        models are being used in training and de-risking of
+                        procedures; in <span>Disaster Management</span> , models
+                        of cities, infrastructure and buildings can be used to
+                        manage emergency response; and in
+                        <span>Smart Cities</span> digital twin are helping
+                        cities become more economically, environmentally and
+                        socially sustainable by guiding planning decisions and
+                        offering solutions to the many complex challenges faced
+                        by modern cities.
+                      </p>
+                    </div>
+                    <h3>SCDT (Smart City Digital Twin)</h3>
+                    <div class="at-description-imageSec">
+                      <div class="at-description">
+
+                          <img
+                            style="
+                              max-width: 100%;
+                              object-fit: contain;
+                              max-height: 400px;
+                            "
+                            src="images/services/sv-01-svdt.png"
+                            alt="image description"
+                          />
+                        <p>
+                          Smart city digital twin is a multi-layer model about
+                          the terrain, buildings, infrastructure, mobility, and
+                          IoT devices. Information from simulations in the SCDT
+                          can be used to test new scenarios through the layers
+                          of the model and then implemented in the physical
+                          world
+                        </br>
+                        </br>
+                          Expanding deployment of ICT, sensors, and the IoT
+                          collect data about pretty much every movement, flow,
+                          or activity in a city. This data, combined with cloud
+                          computing and AI can be used for city planning,
+                          scenario planning, zoning and development. City
+                          planners can factor in local climate resilience,
+                          economic development, housing goals etc.
+                        
+                        </br>
+                          Decision support systems using SCDT can foster
+                          collaboration between planning organizations and other
+                          city departments and agencies. SCDT can serve as the
+                          site where all city data lives; environmental
+                          indicators, resource consumption, zoning regulations,
+                          total housing units, transportation patterns.
+                          Standardized data from multiple areas in a single
+                          repository can be shared across their various
+                          initiatives and programs, promoting cross-departmental
+                          experimentation that better understands
+                          interdependencies between policies and infrastructure
+                          systems. SCDT can be help cities model and deploy fast
+                          and effective responses to natural and man-made
+                          disasters, manage risks, and rapidly create recovery
+                          plans. Digital twins can help stakeholders visualize
+                          projects and developments, even in remote situations.
+                        
+                        </br>
+                        </br>
+                        </br>
+                          We at World Net Labs INC help you in developing and
+                          deploying Digital Twin into your businesses, helping
+                          you make stronger, data-driven decisions. Digital Twin
+                          modeling is the future and with WNL Digital Twin
+                          Solutions you can create, deploy and maintain new
+                          products and services more effectively, faster and
+                          with significantly lower overall cost. Let’s talk!
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--************************************
+				Main End
+		*************************************-->
+      <!--************************************
+				Footer Start
+		*************************************-->
+
+      <footer id="at-footer" class="at-footer at-haslayout">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="at-emailsubscribearea">
+                <p>Keep up to date — get updates with latest topics.</p>
+                <form class="at-formtheme at-formnewsletter">
+                  <fieldset>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Your e-mail address"
+                    />
+                    <button class="at-btn" type="submit">Subscribe</button>
+                  </fieldset>
+                </form>
+              </div>
+              <div class="at-threecolumns">
+                <div class="at-fcolumn">
+                  <div class="at-widget at-widgettext">
+                    <strong class="at-logo"
+                      ><a target="_blank" href="javascript:void(0);"
+                        ><img
+                          src="images/logo.png"
+                          alt="image description" /></a
+                    ></strong>
+                    <div class="at-description">
+                      <p>
+                        We simplify technology to innovate and design deep
+                        engineering solutions.
+                      </p>
+                    </div>
+                    <ul class="at-socialicons">
+                      <li class="at-facebook">
+                        <a
+                          target="_blank"
+                          href="https://www.facebook.com/WorldNetLabs"
+                          ><i class="fa fa-facebook"></i
+                        ></a>
+                      </li>
+                      <li class="at-twit<ter">
+                        <a target="_blank" href="javascript:void(0);"
+                          ><i class="fa fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li class="at-instagram">
+                        <a
+                          target="_blank"
+                          href="https://www.instagram.com/worldnetlabs"
+                          ><i class="fa fa-instagram"></i
+                        ></a>
+                      </li>
+                      <li class="at-linkedin">
+                        <a
+                          target="_blank"
+                          href="https://www.linkedin.com/company/world-net-labs"
+                          ><i class="fa fa-linkedin-square"></i
+                        ></a>
+                      </li>
+                      <li class="at-linkedin">
+                        <a target="_blank" href="mailto: info@worldnetlabs.com"
+                          ><i class="fa fa-envelope"></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <div class="at-description">
+                      <p class="copyright">
+                        Copyright © 2021 || World Net Labs INC
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="at-fcolumn">
+                  <div class="at-widget at-widgetusefullinks">
+                    <div class="at-fwidgettitle">
+                      <h3>Useful Links</h3>
+                    </div>
+                    <div class="at-widgetcontent">
+                      <ul>
+                        <li class="current-menu-item">
+                          <a href="./index.html">Home</a>
+                        </li>
+                        <li class="">
+                          <a href="#expertise">Expertise</a>
+                        </li>
+                        <li class="">
+                          <a href="#industries">Industries</a>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li class="">
+                          <a href="#contact_us">Contact us</a>
+                        </li>
+                        <li class="">
+                          <a href="./allinone.html">About Us</a>
+                        </li>
+                        <li class="">
+                          <a href="./privacyPolicy.html">Privacy Policy</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="at-fcolumn">
+								<div class="at-widget">
+									<div class="at-fwidgettitle">
+										<h3>Recent News</h3>
+									</div>
+									<div class="at-widgetcontent">
+										<ul>
+											<li>
+												<p>Product Design &amp; Branding Innovative Brand Design Concepts</p>
+												<time datetime="2018-01-12">January 28, 2018</time>
+											</li>
+											<li>
+												<p>Product Design &amp; Branding Innovative Brand Design Concepts</p>
+												<time datetime="2018-01-12">January 28, 2018</time>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--************************************
+				Footer End
+		*************************************-->
+    </div>
+    <!--************************************
+			Wrapper End
+	*************************************-->
+    <script src="js/vendor/jquery-library.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcvAXp35fi4q7HXm7vcG9JMtzQbMzjRe8"></script>
+    <script src="js/vendor/jquery-migrate.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky-kit.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/Chart.bundle.min.js"></script>
+    <script src="js/isotope.pkgd.js"></script>
+    <script src="js/prettyPhoto.js"></script>
+    <script src="js/jquery.vide.js"></script>
+    <script src="js/pogoslider.js"></script>
+    <script src="js/countTo.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/gmap3.js"></script>
+    <script src="js/function.js"></script>
+  </body>
+</html>

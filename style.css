@@ -91,6 +91,9 @@ p {
   line-height: 30px;
   letter-spacing: normal;
 }
+p span {
+  font-weight: 400;
+}
 a {
   text-decoration: none;
 }
@@ -227,6 +230,7 @@ label {
   display: block;
   font-weight: 400;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 form p {
   float: left;
@@ -244,7 +248,7 @@ option {
 }
 li {
   line-height: 28px;
-  list-style: disc inside none;
+  list-style: disc;
 }
 ul ul {
   margin-left: 20px;
@@ -813,6 +817,21 @@ li.at-rss a {
 .at-description {
   width: 100%;
   float: left;
+}
+.at-description-imageSec {
+  width: 100%;
+  float: unset;
+  /* display: flex; */
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-top: 2rem;
+}
+.at-description-imageSec p {
+  text-align: justify;
+}
+.at-description-imageSec img {
+  float: right;
 }
 .at-bglight {
   background: #f7f7f7;
@@ -1957,8 +1976,9 @@ li.at-rss a {
   position: relative;
   margin: -200px 0 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .at-requestacallback {
   width: 100%;
@@ -2517,6 +2537,9 @@ li.at-rss a {
   width: 66.66%;
   padding: 0 15px;
 }
+.at-aboutuscontentSerices {
+  width: 100%;
+}
 #at-ourexpertteam {
   margin-top: 4rem;
 }
@@ -2535,6 +2558,7 @@ li.at-rss a {
 .at-aboutusslider {
   width: 100%;
   float: left;
+  margin-bottom: 4rem;
   /* margin: 0 0 40px; */
 }
 .at-aboutusslider .item {
@@ -2559,6 +2583,7 @@ li.at-rss a {
   font-size: 42px;
   font-weight: 300;
   line-height: 45px;
+  text-shadow: 2px 2px #000;
   position: absolute;
   top: calc(50% - 66px);
 }
@@ -3541,7 +3566,7 @@ li.at-rss a {
   width: 100%;
   float: left;
   color: #fff;
-  margin: 30px 0 0;
+  margin: 0 0;
   background-size: cover;
 }
 .at-addressusa {
@@ -6272,4 +6297,116 @@ li.at-rss a {
 }
 section {
   opacity: 0;
+}
+.WNL_expertiseGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  width: 1280px;
+  margin: auto;
+}
+.WNL_expertiseGrid .service {
+  position: relative;
+  height: 350px;
+}
+.WNL_expertiseGrid .service .serviceTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.WNL_expertiseGrid .service .serviceTitle h2 {
+  background-color: transparent;
+  margin: 0;
+  color: white;
+  font-size: 32px;
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+}
+.WNL_expertiseGrid .service figcaption {
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(32, 113, 188);
+  transition: all 500ms ease-in-out;
+  padding: 5rem 1rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.WNL_expertiseGrid .service figure {
+  margin: 0;
+  position: unset;
+  height: 100%;
+  width: 100%;
+}
+.WNL_expertiseGrid .service figcaption h2 {
+  line-height: 1;
+  font-size: unset;
+  text-align: center;
+}
+.WNL_expertiseGrid .service figcaption h2 a,
+.WNL_expertiseGrid .service figcaption h2 a:hover {
+  color: white;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.WNL_expertiseGrid .service figcaption .description p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.3;
+  color: white;
+  margin: 0;
+}
+.WNL_expertiseGrid .service figcaption .action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+.WNL_expertiseGrid .service figcaption .action a {
+  font-size: 16px;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.WNL_expertiseGrid .service figcaption .action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+.WNL_expertiseGrid .service figcaption .action i {
+  font-size: 24px;
+  color: white;
+}
+
+.WNL_expertiseGrid .service img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.WNL_expertiseGrid .service:hover figcaption {
+  opacity: 1;
+}
+.WNL_expertiseGrid .service:hover .serviceTitle {
+  display: none;
 }
