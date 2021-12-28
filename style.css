@@ -1576,6 +1576,9 @@ li.at-rss a {
   font-weight: 300;
   line-height: 28px;
 }
+.at-description ul li {
+  margin-left: 5rem;
+}
 .at-slidercontent .at-btns .at-btn {
   float: left;
 }
