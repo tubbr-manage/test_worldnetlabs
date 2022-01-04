@@ -3622,10 +3622,15 @@ li.at-rss a {
 .at-address ul li span {
   width: 100%;
   float: left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
 }
 .at-address ul li span a {
-  float: left;
+  float: right;
   color: #fff;
+  margin: 0 auto 0 0;
 }
 .at-address ul li address {
   margin: 0;
