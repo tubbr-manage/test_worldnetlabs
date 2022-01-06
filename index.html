@@ -4,9 +4,9 @@
 <!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
-<!--<![endif]-->
+  <!--<![endif]-->
 
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>World Net Labs</title>
@@ -25,33 +25,37 @@
     <link rel="stylesheet" href="css/color.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 
-    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <link rel="stylesheet" href="./wnl_animation.css" />
     <script defer async>
-        const addInterSectionObserver = (element) => {
-            // debugger;
-            var observer = new IntersectionObserver(
-                function(entries) {
-                    if (entries[0].isIntersecting === true)
-                        element.classList.add("cardEntered");
-                }, {
-                    threshold: [0.1]
-                }
-            );
-            observer.observe(element);
-        };
-        window.addEventListener("load", (event) => {
-            const sections = document.getElementsByTagName("section");
-            console.log(sections);
-            [...sections].forEach((card) => {
-                addInterSectionObserver(card);
-            });
+      const addInterSectionObserver = (element) => {
+        // debugger;
+        var observer = new IntersectionObserver(
+          function (entries) {
+            if (entries[0].isIntersecting === true)
+              element.classList.add("cardEntered");
+          },
+          {
+            threshold: [0.1],
+          }
+        );
+        observer.observe(element);
+      };
+      window.addEventListener("load", (event) => {
+        const sections = document.getElementsByTagName("section");
+        console.log(sections);
+        [...sections].forEach((card) => {
+          addInterSectionObserver(card);
         });
+      });
     </script>
-</head>
+  </head>
 
-<body class="at-home at-homeone">
+  <body class="at-home at-homeone">
     <!--[if lt IE 8]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -79,35 +83,46 @@
 			Wrapper Start
 	*************************************-->
     <div id="at-wrapper" class="at-wrapper">
-        <!--************************************
+      <!--************************************
 				Header Start
 		*************************************-->
-        <header id="at-header" class="at-header">
-            <div class="container-fluid">
-                <div class="row">
-                    <strong class="at-logo"><a href="./index.html"
+      <header id="at-header" class="at-header">
+        <div class="container-fluid">
+          <div class="row">
+            <strong class="at-logo"
+              ><a href="./index.html"
                 ><img src="images/logo.png" alt="company logo here" /></a
             ></strong>
-                    <div class="at-navigationarea">
-                        <nav id="at-nav" class="at-nav">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#at-navigation" aria-expanded="false">
+            <div class="at-navigationarea">
+              <nav id="at-nav" class="at-nav">
+                <div class="navbar-header">
+                  <button
+                    type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#at-navigation"
+                    aria-expanded="false"
+                  >
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                            </div>
-                            <div id="at-navigation" class="collapse navbar-collapse at-navigation">
-                                <ul>
-                                    <li class="current-menu-item">
-                                        <a href="./index.html">Home</a>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="./index.html#expertise">Expertise</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="./digital-twin-modelling.html">Digital Twins</a
+                </div>
+                <div
+                  id="at-navigation"
+                  class="collapse navbar-collapse at-navigation"
+                >
+                  <ul>
+                    <li class="current-menu-item">
+                      <a href="./index.html">Home</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="./index.html#expertise">Expertise</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="./digital-twin-modelling.html"
+                            >Digital Twins</a
                           >
                         </li>
                         <li>
@@ -154,12 +169,13 @@
                     </li>
                     <li class="">
                       <a href="./index.html#industries">Industries</a>
-                                            </li>
-                                            <li class="menu-item-has-children">
-                                                <a href="./about-us.html">About Us</a>
-                                                <ul class="sub-menu">
-                                                    <li>
-                                                        <a href="./about-us.html#at-companyoverview">Company Overview</a
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="./about-us.html">About Us</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="./about-us.html#at-companyoverview"
+                            >Company Overview</a
                           >
                         </li>
                         <li>
@@ -176,16 +192,16 @@
                     </li>
                     <li class="">
                       <a href="./index.html#contact_us">Contact us</a>
-                                                    </li>
-                                                </ul>
-                            </div>
-                        </nav>
-                        <div class="at-contactsocial">
-                            <!-- <span class="at-contactnumber">
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="at-contactsocial">
+                <!-- <span class="at-contactnumber">
                   <i class="icon-telephone114"></i>
                   <em>+1 900 234 567</em>
                 </span> -->
-                            <!-- <ul class="at-socialicons">
+                <!-- <ul class="at-socialicons">
                   <li class="at-facebook">
                     <a href="javascript:void(0);"
                       ><i class="fa fa-facebook"></i
@@ -202,42 +218,60 @@
                     ></a>
                   </li>
                 </ul> -->
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </header>
-        <!--************************************
+          </div>
+        </div>
+      </header>
+      <!--************************************
 				Header End
 		*************************************-->
-        <!--************************************
+      <!--************************************
 				Home Slider Start
 		*************************************-->
-        <div class="at-homesliderarea">
-            <div id="at-homeslidervone" class="at-haslayout at-homeslidervone at-homeslider">
-                <div class="pogoSlider-slide" data-transition="fade" data-duration="1500">
-                    <figure data-transition="fade" data-duration="1500" style="
+      <div class="at-homesliderarea">
+        <div
+          id="at-homeslidervone"
+          class="at-haslayout at-homeslidervone at-homeslider"
+        >
+          <div
+            class="pogoSlider-slide"
+            data-transition="fade"
+            data-duration="1500"
+          >
+            <figure
+              data-transition="fade"
+              data-duration="1500"
+              style="
                 background: url('images/slider/img-01.jpg') no-repeat scroll 0 0;
-              "></figure>
-                    <div class="at-pogolidercontent pogoSlider-slide-element" data-in="slideRight" data-out="slideLeft" data-duration="1800">
-                        <div class="at-slidercontent">
-                            <div class="at-titleborder">
-                                <h2>TURNING YOUR IDEAS INTO EXCEPTIONAL PRODUCTS</h2>
-                            </div>
-                            <div class="at-description">
-                                <p>
-                                    We are committed to fulfilling your business needs through innovation and experience
-                                </p>
-                            </div>
-                            <div class="at-btns d-flex at-slidercontent">
-                                <a class="at-btn at-btnactive" href="#expertise">Explore</a>
-                                <!-- <a class="at-btn" href="javascript:void(0);">Contact Us</a> -->
-                            </div>
-                        </div>
-                    </div>
+              "
+            ></figure>
+            <div
+              class="at-pogolidercontent pogoSlider-slide-element"
+              data-in="slideRight"
+              data-out="slideLeft"
+              data-duration="1800"
+            >
+              <div class="at-slidercontent">
+                <div class="at-titleborder">
+                  <h2>TURNING YOUR IDEAS INTO EXCEPTIONAL PRODUCTS</h2>
                 </div>
+                <div class="at-description">
+                  <p>
+                    We are committed to fulfilling your business needs through
+                    innovation and experience
+                  </p>
+                </div>
+                <div class="at-btns d-flex at-slidercontent">
+                  <a class="at-btn at-btnactive" href="#expertise">Explore</a>
+                  <!-- <a class="at-btn" href="javascript:void(0);">Contact Us</a> -->
+                </div>
+              </div>
             </div>
-            <a class="at-infoemail" href="mailto:info@worldnetlabs.com">info@worldnetlabs.com</a
+          </div>
+        </div>
+        <a class="at-infoemail" href="mailto:info@worldnetlabs.com"
+          >info@worldnetlabs.com</a
         >
       </div>
       <!--************************************
@@ -333,29 +367,47 @@
 					About Us Start
 			*************************************-->
         <div style="margin-bottom: 0rem" class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <section class="at-aboutus">
-                        <figure class="at-sectionimg">
-                            <div class="at-imgholder">
-                                <img src="images/parallaxbg/parallaxbg-02.jpg" alt="image description" />
-                            </div>
-                        </figure>
-                        <div class="at-textcontent">
-                            <div class="at-sectiontitleborder">
-                                <h2>Why WNL</h2>
-                            </div>
-                            <div class="at-description">
-                                <p>
-                                    Increasing computational power combined with an array of new technologies are changing system, product and process conceptualization, design, implementation and customer experience. Adopting these technologies will set the winners apart. However, deep
-                                    knowledge and expertise in these technologies is difficult to build in house for most businesses and it is not core to what they do. World Net Labs solves this gap. We co-develop deep technology solutions together with
-                                    our clients in different verticals like retail, manufacturing, financial, medical and automotive. Our customers accelerate time to market with breakthrough solutions without having to build internal expert teams and
-                                    the infrastructure to support them. They can focus on their business and still deliver the most advanced solutions to their clients or for internal process or manufacturing efficiencies. World Net Labs is on a mission
-                                    to build an organization with the best and brightest technologists, scientists and designers who can serve clients across different verticals.
-                                </p>
-                            </div>
-                            <div class="at-btns">
-                                <a class="at-btn at-btnb" href="./about-us.html">Read More</a
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <section class="at-aboutus">
+                <figure class="at-sectionimg">
+                  <div class="at-imgholder">
+                    <img
+                      src="images/parallaxbg/parallaxbg-02.jpg"
+                      alt="image description"
+                    />
+                  </div>
+                </figure>
+                <div class="at-textcontent">
+                  <div class="at-sectiontitleborder">
+                    <h2>Why WNL</h2>
+                  </div>
+                  <div class="at-description">
+                    <p>
+                      Increasing computational power combined with an array of
+                      new technologies are changing system, product and process
+                      conceptualization, design, implementation and customer
+                      experience. Adopting these technologies will set the
+                      winners apart. However, deep knowledge and expertise in
+                      these technologies is difficult to build in house for most
+                      businesses and it is not core to what they do. World Net
+                      Labs solves this gap. We co-develop deep technology
+                      solutions together with our clients in different verticals
+                      like retail, manufacturing, financial, medical and
+                      automotive. Our customers accelerate time to market with
+                      breakthrough solutions without having to build internal
+                      expert teams and the infrastructure to support them. They
+                      can focus on their business and still deliver the most
+                      advanced solutions to their clients or for internal
+                      process or manufacturing efficiencies. World Net Labs is
+                      on a mission to build an organization with the best and
+                      brightest technologists, scientists and designers who can
+                      serve clients across different verticals.
+                    </p>
+                  </div>
+                  <div class="at-btns">
+                    <a class="at-btn at-btnb" href="./about-us.html"
+                      >Read More</a
                     >
                   </div>
                 </div>
@@ -539,198 +591,269 @@
                 </div>
             </div>
         </div> -->
-    </div>
-    </div>
+            </div>
+          </div>
 
-    <div class="WNL_expertiseGrid">
-        <div class="service">
-            <figure>
+          <div class="WNL_expertiseGrid">
+            <div class="service">
+              <figure>
                 <figcaption>
-                    <h2>
-                        <a>Digital Twins</a>
-                    </h2>
-                    <div class="description">
-                        <p>
-                            We help businesses develop digital twin models and connect them to real world data to meet their specific needs throughout the product lifecycle helping them make stronger, data-driven decisions.
-                        </p>
-                    </div>
-                    <div class="action">
-                        <a href="./digital-twin-modelling.html">Learn More <i class="bx bx-right-arrow-alt"></i
+                  <h2>
+                    <a>Digital Twins</a>
+                  </h2>
+                  <div class="description">
+                    <p>
+                      We help businesses develop digital twin models and connect
+                      them to real world data to meet their specific needs
+                      throughout the product lifecycle helping them make
+                      stronger, data-driven decisions.
+                    </p>
+                  </div>
+                  <div class="action">
+                    <a href="./digital-twin-modelling.html"
+                      >Learn More <i class="bx bx-right-arrow-alt"></i
                     ></a>
-                    </div>
+                  </div>
                 </figcaption>
                 <div class="serviceTitle">
-                    <h2>Digital Twins</h2>
+                  <h2>Digital Twins</h2>
                 </div>
-                <img src="images/services/img-01.jpg" alt="image description" loading="eager" />
-            </figure>
-        </div>
-        <div class="service">
-            <figure>
+                <img
+                  src="images/services/img-01.jpg"
+                  alt="image description"
+                  loading="eager"
+                />
+              </figure>
+            </div>
+            <div class="service">
+              <figure>
                 <figcaption>
-                    <h2>
-                        <a>CFD, CAE, FEA Numerical Simulation</a>
-                    </h2>
-                    <div class="description">
-                        <p>
-                            We create physical realism of digital twins using complex numerical simulation techniques such as Finite Difference Method (FDM), Finite Element Method (FEM), Finite Volume Method (FVM) and Discrete Element Method (DEM); shortening development and deployment
-                            time, reducing costs and increasing reliability of product &amp; system launches.
-                        </p>
-                    </div>
-                    <div class="action">
-                        <a href="./numerical-solutions.html">Learn More <i class="bx bx-right-arrow-alt"></i
+                  <h2>
+                    <a>CFD, CAE, FEA Numerical Simulation</a>
+                  </h2>
+                  <div class="description">
+                    <p>
+                      We create physical realism of digital twins using complex
+                      numerical simulation techniques such as Finite Difference
+                      Method (FDM), Finite Element Method (FEM), Finite Volume
+                      Method (FVM) and Discrete Element Method (DEM); shortening
+                      development and deployment time, reducing costs and
+                      increasing reliability of product &amp; system launches.
+                    </p>
+                  </div>
+                  <div class="action">
+                    <a href="./numerical-solutions.html"
+                      >Learn More <i class="bx bx-right-arrow-alt"></i
                     ></a>
-                    </div>
+                  </div>
                 </figcaption>
                 <div class="serviceTitle">
-                    <h2>CFD, CAE, FEA Numerical Simulation</h2>
+                  <h2>CFD, CAE, FEA Numerical Simulation</h2>
                 </div>
-                <img src="images/services/img-02.jpg" alt="image description" loading="eager" />
-            </figure>
-        </div>
-        <div class="service">
-            <figure>
+                <img
+                  src="images/services/img-02.jpg"
+                  alt="image description"
+                  loading="eager"
+                />
+              </figure>
+            </div>
+            <div class="service">
+              <figure>
                 <figcaption>
-                    <h2>
-                        <a>HCI & UX</a>
-                    </h2>
-                    <div class="description">
-                        <p>
-                            We are experts in building Human-Computer Interaction (HCI) and User-Experience (UX) that understand customer’s behaviors, motivations, and goals using computer science, cognitive psychology, behavioral science, and design.
-                        </p>
-                    </div>
-                    <div class="action">
-                        <a href="./human-computer-interaction.html">Learn More <i class="bx bx-right-arrow-alt"></i
+                  <h2>
+                    <a>HCI & UX</a>
+                  </h2>
+                  <div class="description">
+                    <p>
+                      We are experts in building Human-Computer Interaction
+                      (HCI) and User-Experience (UX) that understand customer’s
+                      behaviors, motivations, and goals using computer science,
+                      cognitive psychology, behavioral science, and design.
+                    </p>
+                  </div>
+                  <div class="action">
+                    <a href="./human-computer-interaction.html"
+                      >Learn More <i class="bx bx-right-arrow-alt"></i
                     ></a>
-                    </div>
+                  </div>
                 </figcaption>
                 <div class="serviceTitle">
-                    <h2>HCI & UX</h2>
+                  <h2>HCI & UX</h2>
                 </div>
-                <img src="images/services/img-03.jpg" alt="image description" loading="eager" />
-            </figure>
-        </div>
-        <div class="service">
-            <figure>
+                <img
+                  src="images/services/img-03.jpg"
+                  alt="image description"
+                  loading="eager"
+                />
+              </figure>
+            </div>
+            <div class="service">
+              <figure>
                 <figcaption>
-                    <h2>
-                        <a>Cyber Physical Systems</a>
-                    </h2>
-                    <div class="description">
-                        <p>
-                            World Net Labs engineers build cyber physical systems to create and collect quality data to deliver analytics and insights by integrating sensing, computation, control and networking into physical objects and infrastructure; connecting them to the Internet
-                            and to each other.
-                        </p>
-                    </div>
-                    <div class="action">
-                        <a href="./cyber-physical-systems.html">Learn More <i class="bx bx-right-arrow-alt"></i
+                  <h2>
+                    <a>Cyber Physical Systems</a>
+                  </h2>
+                  <div class="description">
+                    <p>
+                      World Net Labs engineers build cyber physical systems to
+                      create and collect quality data to deliver analytics and
+                      insights by integrating sensing, computation, control and
+                      networking into physical objects and infrastructure;
+                      connecting them to the Internet and to each other.
+                    </p>
+                  </div>
+                  <div class="action">
+                    <a href="./cyber-physical-systems.html"
+                      >Learn More <i class="bx bx-right-arrow-alt"></i
                     ></a>
-                    </div>
+                  </div>
                 </figcaption>
                 <div class="serviceTitle">
-                    <h2>Cyber Physical Systems</h2>
+                  <h2>Cyber Physical Systems</h2>
                 </div>
-                <img src="images/services/img-04.jpg" alt="image description" loading="eager" />
-            </figure>
-        </div>
-        <div class="service">
-            <figure>
+                <img
+                  src="images/services/img-04.jpg"
+                  alt="image description"
+                  loading="eager"
+                />
+              </figure>
+            </div>
+            <div class="service">
+              <figure>
                 <figcaption>
-                    <h2>
-                        <a>Networking, Media, and Image Processing</a>
-                    </h2>
-                    <div class="description">
-                        <p>
-                            We develop superior CV algorithms that achieve maximum accuracy and run-time performance. Our CV expertise covers Image Processing, Object Detection, Advanced Encoding, Super Resolution, Content Analytics &amp; Repurposing, AI based Media Coding and other
-                            advanced technologies.
-                        </p>
-                    </div>
-                    <div class="action">
-                        <a href="./networking-image-processing.html">Learn More <i class="bx bx-right-arrow-alt"></i
+                  <h2>
+                    <a>Networking, Media, and Image Processing</a>
+                  </h2>
+                  <div class="description">
+                    <p>
+                      We develop superior CV algorithms that achieve maximum
+                      accuracy and run-time performance. Our CV expertise covers
+                      Image Processing, Object Detection, Advanced Encoding,
+                      Super Resolution, Content Analytics &amp; Repurposing, AI
+                      based Media Coding and other advanced technologies.
+                    </p>
+                  </div>
+                  <div class="action">
+                    <a href="./networking-image-processing.html"
+                      >Learn More <i class="bx bx-right-arrow-alt"></i
                     ></a>
-                    </div>
+                  </div>
                 </figcaption>
                 <div class="serviceTitle">
-                    <h2>Networking, Media, and Image Processing</h2>
+                  <h2>Networking, Media, and Image Processing</h2>
                 </div>
-                <img src="images/services/img-05.jpg" alt="image description" loading="eager" />
-            </figure>
-        </div>
-        <div class="service">
-            <figure>
+                <img
+                  src="images/services/img-05.jpg"
+                  alt="image description"
+                  loading="eager"
+                />
+              </figure>
+            </div>
+            <div class="service">
+              <figure>
                 <figcaption>
-                    <h2>
-                        <a>Big Data Management and Analytics</a>
-                    </h2>
-                    <div class="description">
-                        <p>
-                            ​​Our data scientists use big data analytics to examine large and complex varieties of data using predictive modeling, statistics, and other analytics to uncover hidden patterns, market trends, customer preferences, unknown correlations, and other useful
-                            information to help organizations improve their decision-making process, enabling more well-informed business decisions.
-                        </p>
-                    </div>
-                    <div class="action">
-                        <a href="./big-data-analytics.html">Learn More <i class="bx bx-right-arrow-alt"></i
+                  <h2>
+                    <a>Big Data Management and Analytics</a>
+                  </h2>
+                  <div class="description">
+                    <p>
+                      ​​Our data scientists use big data analytics to examine
+                      large and complex varieties of data using predictive
+                      modeling, statistics, and other analytics to uncover
+                      hidden patterns, market trends, customer preferences,
+                      unknown correlations, and other useful information to help
+                      organizations improve their decision-making process,
+                      enabling more well-informed business decisions.
+                    </p>
+                  </div>
+                  <div class="action">
+                    <a href="./big-data-analytics.html"
+                      >Learn More <i class="bx bx-right-arrow-alt"></i
                     ></a>
-                    </div>
+                  </div>
                 </figcaption>
                 <div class="serviceTitle">
-                    <h2>Big Data Management and Analytics</h2>
+                  <h2>Big Data Management and Analytics</h2>
                 </div>
-                <img src="images/services/img-06.jpg" alt="image description" loading="eager" />
-            </figure>
-        </div>
-        <div class="service">
-            <figure>
+                <img
+                  src="images/services/img-06.jpg"
+                  alt="image description"
+                  loading="eager"
+                />
+              </figure>
+            </div>
+            <div class="service">
+              <figure>
                 <figcaption>
-                    <h2>
-                        <a>RPA and Automation Engineering</a>
-                    </h2>
-                    <div class="description">
-                        <p>
-                            RPA is the science of building software robots that interact with SaaS applications and IT systems to automate the rule-based manual jobs associated with repetitive and transactional processes. RPA combines Machine Learning, Automation Engineering and
-                            Artificial Intelligence to automate repetitive business tasks that require vast human resources today.
-                        </p>
-                    </div>
-                    <div class="action">
-                        <a href="./rpa-autmoation-engineering.html">Learn More <i class="bx bx-right-arrow-alt"></i
+                  <h2>
+                    <a>RPA and Automation Engineering</a>
+                  </h2>
+                  <div class="description">
+                    <p>
+                      RPA is the science of building software robots that
+                      interact with SaaS applications and IT systems to automate
+                      the rule-based manual jobs associated with repetitive and
+                      transactional processes. RPA combines Machine Learning,
+                      Automation Engineering and Artificial Intelligence to
+                      automate repetitive business tasks that require vast human
+                      resources today.
+                    </p>
+                  </div>
+                  <div class="action">
+                    <a href="./rpa-autmoation-engineering.html"
+                      >Learn More <i class="bx bx-right-arrow-alt"></i
                     ></a>
-                    </div>
+                  </div>
                 </figcaption>
                 <div class="serviceTitle">
-                    <h2>RPA and Automation Engineering</h2>
+                  <h2>RPA and Automation Engineering</h2>
                 </div>
-                <img src="images/services/img-07.jpg" alt="image description" loading="eager" />
-            </figure>
-        </div>
-        <div class="service">
-            <figure>
+                <img
+                  src="images/services/img-07.jpg"
+                  alt="image description"
+                  loading="eager"
+                />
+              </figure>
+            </div>
+            <div class="service">
+              <figure>
                 <figcaption>
-                    <h2>
-                        <a>Software Architectures</a>
-                    </h2>
-                    <div class="description">
-                        <p>
-                            Advanced software architectures are needed for resilient designs, choosing between monoliths and microservices, edge computing, hybrid cloud for microservices and containers, agile frameworks that incorporate DevSecOps, hyper-Automation and effective
-                            deployments of AIOps to manage complex distributed systems, event-driven systems, and big data.
-                        </p>
-                    </div>
-                    <div class="action">
-                        <a href="./software-architecture.html">Learn More <i class="bx bx-right-arrow-alt"></i
+                  <h2>
+                    <a>Software Architectures</a>
+                  </h2>
+                  <div class="description">
+                    <p>
+                      Advanced software architectures are needed for resilient
+                      designs, choosing between monoliths and microservices,
+                      edge computing, hybrid cloud for microservices and
+                      containers, agile frameworks that incorporate DevSecOps,
+                      hyper-Automation and effective deployments of AIOps to
+                      manage complex distributed systems, event-driven systems,
+                      and big data.
+                    </p>
+                  </div>
+                  <div class="action">
+                    <a href="./software-architecture.html"
+                      >Learn More <i class="bx bx-right-arrow-alt"></i
                     ></a>
-                    </div>
+                  </div>
                 </figcaption>
                 <div class="serviceTitle">
-                    <h2>Software Architectures</h2>
+                  <h2>Software Architectures</h2>
                 </div>
-                <img src="images/services/img-08.jpg" alt="image description" loading="eager" />
-            </figure>
-        </div>
-    </div>
-    </section>
-    <!--************************************
+                <img
+                  src="images/services/img-08.jpg"
+                  alt="image description"
+                  loading="eager"
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
+        <!--************************************
 					Deep Technology Expertise End
 			*************************************-->
-    <!-- <section class="at-sectionspace at-overflowhidden at-haslayout">
+        <!-- <section class="at-sectionspace at-overflowhidden at-haslayout">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -843,74 +966,91 @@
 					</div>
 				</div>
 			</section> -->
-    <!--************************************
+        <!--************************************
 					Industries Start
 			*************************************-->
 
-    <section id="industries" class="at-haslayout">
-        <div class="container">
+        <section id="industries" class="at-haslayout">
+          <div class="container">
             <div class="at-sectiontitleborder">
-                <h2>Industries We Serve</h2>
+              <h2>Industries We Serve</h2>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="at-services at-servicesvthree">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 pull-left">
-                                <div class="at-service">
-                                    <span class="at-serviceicon"><i class="bx bx-car"></i
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="at-services at-servicesvthree">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 pull-left">
+                      <div class="at-service">
+                        <span class="at-serviceicon"
+                          ><i class="bx bx-car"></i
                         ></span>
-                                    <div class="at-title">
-                                        <h3>
-                                            <a href="servicedetail.html">Automotive</a>
-                                        </h3>
-                                    </div>
-                                    <div class="at-description">
-                                        <p>
-                                            We provide constructive solutions to enhance the functionality of in-vehicle electronics that promise an unprecedented driving experience. We help you with a plethora of services like digital cockpits, design, etc.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 pull-left">
-                                <div class="at-service">
-                                    <span class="at-serviceicon"><i class="bx bx-shape-square"></i
+                        <div class="at-title">
+                          <h3>
+                            <a href="servicedetail.html">Automotive</a>
+                          </h3>
+                        </div>
+                        <div class="at-description">
+                          <p>
+                            We provide constructive solutions to enhance the
+                            functionality of in-vehicle electronics that promise
+                            an unprecedented driving experience. We help you
+                            with a plethora of services like digital cockpits,
+                            design, etc.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 pull-left">
+                      <div class="at-service">
+                        <span class="at-serviceicon"
+                          ><i class="bx bx-shape-square"></i
                         ></span>
-                                    <div class="at-title">
-                                        <h3>
-                                            <a href="servicedetail.html">Manufacturing</a>
-                                        </h3>
-                                    </div>
-                                    <div class="at-description">
-                                        <p>
-                                            Perfectly cognizant of never-ending business barriers faced by manufacturers, we can assist you in developing practical and analytical digital transformation blueprints to derange your markets and build a successful business.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 pull-left">
-                                <div class="at-service">
-                                    <span class="at-serviceicon"><i class="bx bx-cart"></i
+                        <div class="at-title">
+                          <h3>
+                            <a href="servicedetail.html">Manufacturing</a>
+                          </h3>
+                        </div>
+                        <div class="at-description">
+                          <p>
+                            Perfectly cognizant of never-ending business
+                            barriers faced by manufacturers, we can assist you
+                            in developing practical and analytical digital
+                            transformation blueprints to derange your markets
+                            and build a successful business.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 pull-left">
+                      <div class="at-service">
+                        <span class="at-serviceicon"
+                          ><i class="bx bx-cart"></i
                         ></span>
-                                    <div class="at-title">
-                                        <h3>
-                                            <a href="servicedetail.html">Retail</a>
-                                        </h3>
-                                    </div>
-                                    <div class="at-description">
-                                        <p>
-                                            We design customer-oriented products that fit into the perfect combination of simplification and diversification. Our designed products provide an unconventional experience along with creating resources to advance and improve backend operations.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 pull-left">
-                                <div class="at-service">
-                                    <span class="at-serviceicon"><i class="bx bx-injection"></i
+                        <div class="at-title">
+                          <h3>
+                            <a href="servicedetail.html">Retail</a>
+                          </h3>
+                        </div>
+                        <div class="at-description">
+                          <p>
+                            We design customer-oriented products that fit into
+                            the perfect combination of simplification and
+                            diversification. Our designed products provide an
+                            unconventional experience along with creating
+                            resources to advance and improve backend operations.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 pull-left">
+                      <div class="at-service">
+                        <span class="at-serviceicon"
+                          ><i class="bx bx-injection"></i
                         ></span>
-                                    <div class="at-title">
-                                        <h3>
-                                            <a href="servicedetail.html">Biotech & Healthcare</a
+                        <div class="at-title">
+                          <h3>
+                            <a href="servicedetail.html"
+                              >Biotech & Healthcare</a
                             >
                           </h3>
                         </div>
@@ -956,50 +1096,64 @@
                         <div class="at-title">
                           <h3>
                             <a href="servicedetail.html">Financial</a>
-                                        </h3>
-                                    </div>
-                                    <div class="at-description">
-                                        <p>
-                                            Financial professionals at World Net Labs create an economical business model for banking and financial services companies to underpin their digital transfiguration and build seamless omnichannel experiences for them.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 pull-left">
-                                <div class="at-service">
-                                    <span class="at-serviceicon"><i class="bx bx-leaf"></i
-                        ></span>
-                                    <div class="at-title">
-                                        <h3>
-                                            <a href="servicedetail.html">Agriculture</a>
-                                        </h3>
-                                    </div>
-                                    <div class="at-description">
-                                        <p>
-                                            Researchers at World Net Labs constantly develop innovative solutions and sustainable practices to reduce the cost of operations for agricultural businesses. We devise economical yet effective practices for your agricultural business.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 pull-left">
-                                <div class="at-service">
-                                    <span class="at-serviceicon"><i class="bx bx-building-house"></i
-                        ></span>
-                                    <div class="at-title">
-                                        <h3>
-                                            <a href="servicedetail.html">SmartCity</a>
-                                        </h3>
-                                    </div>
-                                    <div class="at-description">
-                                        <p>
-                                            We decentralize the operations of smart cities to collect data from all domains. World Net Labs also accelerate the analysis of massive amounts of data uploaded on the portal and use predictive analytics to evaluate future configurations.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                          </h3>
                         </div>
+                        <div class="at-description">
+                          <p>
+                            Financial professionals at World Net Labs create an
+                            economical business model for banking and financial
+                            services companies to underpin their digital
+                            transfiguration and build seamless omnichannel
+                            experiences for them.
+                          </p>
+                        </div>
+                      </div>
                     </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 pull-left">
+                      <div class="at-service">
+                        <span class="at-serviceicon"
+                          ><i class="bx bx-leaf"></i
+                        ></span>
+                        <div class="at-title">
+                          <h3>
+                            <a href="servicedetail.html">Agriculture</a>
+                          </h3>
+                        </div>
+                        <div class="at-description">
+                          <p>
+                            Researchers at World Net Labs constantly develop
+                            innovative solutions and sustainable practices to
+                            reduce the cost of operations for agricultural
+                            businesses. We devise economical yet effective
+                            practices for your agricultural business.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 pull-left">
+                      <div class="at-service">
+                        <span class="at-serviceicon"
+                          ><i class="bx bx-building-house"></i
+                        ></span>
+                        <div class="at-title">
+                          <h3>
+                            <a href="servicedetail.html">SmartCity</a>
+                          </h3>
+                        </div>
+                        <div class="at-description">
+                          <p>
+                            We decentralize the operations of smart cities to
+                            collect data from all domains. World Net Labs also
+                            accelerate the analysis of massive amounts of data
+                            uploaded on the portal and use predictive analytics
+                            to evaluate future configurations.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
             <!-- <div style="margin: 6rem auto" class="row">
               <div class="at-counterarea">
@@ -1071,79 +1225,101 @@
                 </div>
               </div>
             </div> -->
-        </div>
-    </section>
-    <!--************************************
+          </div>
+        </section>
+        <!--************************************
 					Industries End
 			*************************************-->
-    <!--************************************
+        <!--************************************
 					Special Services End
 			*************************************-->
-    <!--************************************
+        <!--************************************
 					Helping Start
 			*************************************-->
-    <section id="contact_us" class="at-sectionspace at-parallex at-parallexhelping">
-        <div class="container">
+        <section
+          id="contact_us"
+          class="at-sectionspace at-parallex at-parallexhelping"
+        >
+          <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="at-helpingsmallbusinesses">
-                        <h2>BEST MINDS BUILDING SOLUTIONS TO MEET YOUR GOALS</h2>
-                        <h3>
-                            We believe that every business problem has a technology-driven solution. We’re here for you from start to finish
-                        </h3>
-                    </div>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="at-helpingsmallbusinesses">
+                  <h2>BEST MINDS BUILDING SOLUTIONS TO MEET YOUR GOALS</h2>
+                  <h3>
+                    We believe that every business problem has a
+                    technology-driven solution. We’re here for you from start to
+                    finish
+                  </h3>
                 </div>
+              </div>
             </div>
-        </div>
-    </section>
-    <!--************************************
+          </div>
+        </section>
+        <!--************************************
 					Helping End
 			*************************************-->
-    <!--************************************
+        <!--************************************
 					Request a Call Back Start
 			*************************************-->
-    <section class="at-haslayout">
-        <div class="container">
+        <section class="at-haslayout">
+          <div class="container">
             <div class="row">
-                <div class="at-requestandcustomers">
-                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                        <div class="at-requestacallback">
-                            <div class="at-textcontent">
-                                <div class="at-sectiontitleborder">
-                                    <h2>COLLABORATE WITH US</h2>
-                                </div>
-                                <!-- <div class="at-description">
+              <div class="at-requestandcustomers">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                  <div class="at-requestacallback">
+                    <div class="at-textcontent">
+                      <div class="at-sectiontitleborder">
+                        <h2>COLLABORATE WITH US</h2>
+                      </div>
+                      <!-- <div class="at-description">
 											<p>Donec mollis lacus sit amet sem vehicula, et laoreet dolor fermentum. Integer ac auctor velit.</p>
 											<p><strong>For Investment:</strong> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem or phone <a href="javascript:void(0);">+1(123) 456 654 3210</a> ipsum quia dolor sit amet, consectetur.</p>
 										</div> -->
-                            </div>
-                            <form method="POST" class="at-formtheme at-formrequestcallback" action="https://formspree.io/f/moqrvpyq">
-                                <fieldset>
-                                    <div class="form-row form-row-mobile-col">
-                                        <div class="form-group halfItem">
-                                            <label for="name">Name</label>
-                                            <input type="text" name="name" class="form-control" placeholder="Your Name" />
-                                        </div>
-                                        <div class="form-group halfItem">
-                                            <label for="email">Email Address<sup>*</sup></label>
-                                            <input type="email" name="email" class="form-control" placeholder="Email Address" />
-                                        </div>
-                                    </div>
-                                    <div class="form-row form-row-mobile-col">
-                                        <div class="form-group halfItem">
-                                            <label for="company_name">Company Name<sup>*</sup></label
+                    </div>
+                    <form
+                      method="POST"
+                      class="at-formtheme at-formrequestcallback"
+                      action="https://formspree.io/f/moqrvpyq"
+                    >
+                      <fieldset>
+                        <div class="form-row form-row-mobile-col">
+                          <div class="form-group halfItem">
+                            <label for="name">Name</label>
+                            <input
+                              type="text"
+                              name="name"
+                              class="form-control"
+                              placeholder="Your Name"
+                            />
+                          </div>
+                          <div class="form-group halfItem">
+                            <label for="email">Email Address<sup>*</sup></label>
+                            <input
+                              type="email"
+                              name="email"
+                              class="form-control"
+                              required
+                              placeholder="Email Address"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-row form-row-mobile-col">
+                          <div class="form-group halfItem">
+                            <label for="company_name"
+                              >Company Name<sup>*</sup></label
                             >
                             <input
                               type="text"
                               name="company_name"
                               class="form-control"
+                              required
                               placeholder="Company Name"
                             />
                           </div>
                           <div class="form-group form-row halfItem">
                             <div class="form-group firstItem">
                               <label for="phone_number">Phone number </label>
-                                            <select name="countryCode" id="">
+                              <select name="countryCode" id="">
                                 <option data-countryCode="GB" value="44">
                                   Norway (+47)
                                 </option>
@@ -1793,9 +1969,10 @@
                                   Zimbabwe (+263)
                                 </option>
                               </select>
-                                        </div>
-                                        <div class="form-group secondItem">
-                                            <label for="phone_number">&nbsp;&nbsp;&nbsp;</label
+                            </div>
+                            <div class="form-group secondItem">
+                              <label for="phone_number"
+                                >&nbsp;&nbsp;&nbsp;</label
                               >
                               <input
                                 type="tel"
@@ -1949,25 +2126,33 @@
 
                         <div class="form-group">
                           <label for="message">Message <sup>*</sup></label>
-                                            <textarea class="form-control" name="message" id="" rows="8" placeholder="Enter Your Message"></textarea>
-                                        </div>
-                                        <div class="at-btns">
-                                            <button class="at-btn at-btnb" type="submit">
+                          <textarea
+                            class="form-control"
+                            name="message"
+                            required
+                            id=""
+                            rows="8"
+                            placeholder="Enter Your Message"
+                          ></textarea>
+                        </div>
+                        <div class="at-btns">
+                          <button class="at-btn at-btnb" type="submit">
                             sumbit
                           </button>
-                                        </div>
-                                </fieldset>
-                            </form>
-                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                            <div class="at-addressbox at-addressusa">
-                                <div class="at-addressholder">
-                                    <div class="at-address">
-                                        <h2><em>America Location</em>Austin</h2>
-                                        <ul>
-                                            <li>
-                                                <span>Email:
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <div class="at-addressbox at-addressusa">
+                    <div class="at-addressholder">
+                      <div class="at-address">
+                        <h2><em>America Location</em>Austin</h2>
+                        <ul>
+                          <li>
+                            <span
+                              >Email:
                               <a href="mailto: info@worldnetlabs.com"
                                 >info@worldnetlabs.com</a
                               ></span
@@ -1984,11 +2169,11 @@
                           <span>Get Directions</span>
                                                 <i class="icon-circle-right"></i>
                                                 </a> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 pull-left">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 pull-left">
 								<div id="at-happycustomers" class="at-happycustomers at-counters">
 									<div class="at-happycustomercounter">
 										<h3 data-from="0" data-to="530" data-speed="8000" data-refresh-interval="50">530</h3>
@@ -1996,17 +2181,17 @@
 									</div>
 								</div>
 							</div> -->
-                    </div>
-                </div>
+              </div>
             </div>
-    </section>
-    <!--************************************
+          </div>
+        </section>
+        <!--************************************
 					Request a Call Back End
 			*************************************-->
-    <!--************************************
+        <!--************************************
 					Testimonials Start
 			*************************************-->
-    <!-- <section class="at-sectionspace at-haslayout">
+        <!-- <section class="at-sectionspace at-haslayout">
           <div class="container">
             <div class="row">
               <div class="at-testimonials">
@@ -2082,13 +2267,13 @@
             </div>
           </div>
         </section> -->
-    <!--************************************
+        <!--************************************
 					Testimonials End
 			*************************************-->
-    <!--************************************
+        <!--************************************
 					Why Choose Us Start
 			*************************************-->
-    <!-- <section class="at-sectionspace at-whychooseusarea at-haslayout">
+        <!-- <section class="at-sectionspace at-whychooseusarea at-haslayout">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -2122,13 +2307,13 @@
 					</div>
 				</div>
 			</section> -->
-    <!--************************************
+        <!--************************************
 					Why Choose Us End
 			*************************************-->
-    <!--************************************
+        <!--************************************
 					Map And Address Start
 			*************************************-->
-    <!-- <section class="at-mapandaddress at-haslayout">
+        <!-- <section class="at-mapandaddress at-haslayout">
 				<div id="at-locationmap" class="at-locationmap"></div>
 				<div class="container">
 					<div class="at-addressarea">
@@ -2200,103 +2385,125 @@
 					</div>
 				</div>
 			</section> -->
-    <!--************************************
+        <!--************************************
 					Map And Address End
 			*************************************-->
-    </main>
-    <!--************************************
+      </main>
+      <!--************************************
 				Main End
 		*************************************-->
-    <!--************************************
+      <!--************************************
 				Footer Start
 		*************************************-->
-    <footer id="at-footer" class="at-footer at-haslayout">
+      <footer id="at-footer" class="at-footer at-haslayout">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="at-emailsubscribearea">
-                        <p>Keep up to date — get updates with latest topics.</p>
-                        <form class="at-formtheme at-formnewsletter" method="POST" action="https://formspree.io/f/xgedvprv">
-                            <fieldset>
-                                <input type="email" name="email" class="form-control" placeholder="Your e-mail address" />
-                                <button class="at-btn" type="submit">Subscribe</button>
-                            </fieldset>
-                        </form>
-                    </div>
-                    <div class="at-threecolumns">
-                        <div class="at-fcolumn">
-                            <div class="at-widget at-widgettext">
-                                <strong class="at-logo"><a target="_blank" href="javascript:void(0);"
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="at-emailsubscribearea">
+                <p>Keep up to date — get updates with latest topics.</p>
+                <form
+                  class="at-formtheme at-formnewsletter"
+                  method="POST"
+                  action="https://formspree.io/f/xgedvprv"
+                >
+                  <fieldset>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Your e-mail address"
+                    />
+                    <button class="at-btn" type="submit">Subscribe</button>
+                  </fieldset>
+                </form>
+              </div>
+              <div class="at-threecolumns">
+                <div class="at-fcolumn">
+                  <div class="at-widget at-widgettext">
+                    <strong class="at-logo"
+                      ><a target="_blank" href="javascript:void(0);"
                         ><img
                           src="images/logo.png"
                           alt="image description" /></a
                     ></strong>
-                                <div class="at-description">
-                                    <p>
-                                        We simplify creation and adoption of technology through innovation and design of deep engineering solutions.
-                                    </p>
-                                </div>
-                                <ul class="at-socialicons">
-                                    <li class="at-facebook">
-                                        <a target="_blank" href="https://www.facebook.com/WorldNetLabs"><i class="fa fa-facebook"></i
+                    <div class="at-description">
+                      <p>
+                        We simplify creation and adoption of technology through
+                        innovation and design of deep engineering solutions.
+                      </p>
+                    </div>
+                    <ul class="at-socialicons">
+                      <li class="at-facebook">
+                        <a
+                          target="_blank"
+                          href="https://www.facebook.com/WorldNetLabs"
+                          ><i class="fa fa-facebook"></i
                         ></a>
-                                    </li>
-                                    <li class="at-twit<ter">
-                                        <a target="_blank" href="javascript:void(0);"><i class="fa fa-twitter"></i
+                      </li>
+                      <li class="at-twit<ter">
+                        <a target="_blank" href="javascript:void(0);"
+                          ><i class="fa fa-twitter"></i
                         ></a>
-                                    </li>
-                                    <li class="at-instagram">
-                                        <a target="_blank" href="https://www.instagram.com/worldnetlabs"><i class="fa fa-instagram"></i
+                      </li>
+                      <li class="at-instagram">
+                        <a
+                          target="_blank"
+                          href="https://www.instagram.com/worldnetlabs"
+                          ><i class="fa fa-instagram"></i
                         ></a>
-                                    </li>
-                                    <li class="at-linkedin">
-                                        <a target="_blank" href="https://www.linkedin.com/company/world-net-labs"><i class="fa fa-linkedin-square"></i
+                      </li>
+                      <li class="at-linkedin">
+                        <a
+                          target="_blank"
+                          href="https://www.linkedin.com/company/world-net-labs"
+                          ><i class="fa fa-linkedin-square"></i
                         ></a>
-                                    </li>
-                                    <li class="at-linkedin">
-                                        <a target="_blank" href="mailto: info@worldnetlabs.com"><i class="fa fa-envelope"></i
+                      </li>
+                      <li class="at-linkedin">
+                        <a target="_blank" href="mailto: info@worldnetlabs.com"
+                          ><i class="fa fa-envelope"></i
                         ></a>
-                                    </li>
-                                </ul>
-                                <div class="at-description">
-                                    <p class="copyright">
-                                        Copyright © 2021 || World Net Labs INC
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="at-fcolumn">
-                            <div class="at-widget at-widgetusefullinks">
-                                <div class="at-fwidgettitle">
-                                    <h3>Useful Links</h3>
-                                </div>
-                                <div class="at-widgetcontent">
-                                    <ul>
-                                        <li class="current-menu-item">
-                                            <a href="./index.html">Home</a>
-                                        </li>
-                                        <li class="">
-                                            <a href="./index.html#expertise">Expertise</a>
-                                        </li>
-                                        <li class="">
-                                            <a href="./index.html#industries">Industries</a>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li class="">
-                                            <a href="./index.html#contact_us">Contact us</a>
-                                        </li>
-                                        <li class="">
-                                            <a href="./about-us.html">About Us</a>
-                                        </li>
-                                        <li class="">
-                                            <a href="./privacyPolicy.html">Privacy Policy</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="at-fcolumn">
+                      </li>
+                    </ul>
+                    <div class="at-description">
+                      <p class="copyright">
+                        Copyright © 2021 || World Net Labs INC
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="at-fcolumn">
+                  <div class="at-widget at-widgetusefullinks">
+                    <div class="at-fwidgettitle">
+                      <h3>Useful Links</h3>
+                    </div>
+                    <div class="at-widgetcontent">
+                      <ul>
+                        <li class="current-menu-item">
+                          <a href="./index.html">Home</a>
+                        </li>
+                        <li class="">
+                          <a href="./index.html#expertise">Expertise</a>
+                        </li>
+                        <li class="">
+                          <a href="./index.html#industries">Industries</a>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li class="">
+                          <a href="./index.html#contact_us">Contact us</a>
+                        </li>
+                        <li class="">
+                          <a href="./about-us.html">About Us</a>
+                        </li>
+                        <li class="">
+                          <a href="./privacyPolicy.html">Privacy Policy</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="at-fcolumn">
 								<div class="at-widget">
 									<div class="at-fwidgettitle">
 										<h3>Recent News</h3>
@@ -2315,12 +2522,12 @@
 									</div>
 								</div>
 							</div> -->
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </footer>
-    <!--************************************
+      </footer>
+      <!--************************************
 				Footer End
 		*************************************-->
     </div>
@@ -2341,6 +2548,5 @@
     <!-- <script src="js/appear.js"></script> -->
     <!-- <script src="js/gmap3.js"></script> -->
     <script src="js/function.js"></script>
-</body>
-
+  </body>
 </html>
