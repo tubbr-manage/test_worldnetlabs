@@ -1977,8 +1977,10 @@
                               <input
                                 type="tel"
                                 id="phone_number"
+                                pattern="^[0-9]+$"
                                 name="phone"
                                 class="form-control"
+                                oninvalid="this.setCustomValidity('Please enter a valid number')"
                                 placeholder="Phone Number"
                               />
                             </div>
